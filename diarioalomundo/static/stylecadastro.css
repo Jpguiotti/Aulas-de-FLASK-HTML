@@ -1,0 +1,75 @@
+/* Estilos gerais para reset - Este bloco de código faz um reset dos estilos básicos aplicados aos elementos HTML, removendo margens e paddings padrão, além de definir a fonte Arial para todo o conteúdo. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centraliza o conteúdo na página - Centraliza o conteúdo da página e define a imagem cadastro.jpg como plano de fundo. A imagem é fixada e redimensionada de acordo com o tamanho da tela. */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(cadastro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Fixa a imagem no fundo, mantendo a proporção ao redimensionar a tela */
+}
+
+/* Estilo do formulário - Estiliza o formulário de cadastro com fundo branco, cantos arredondados, e uma sombra suave para destacá-lo do fundo. */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo dos labels - Estiliza os rótulos (labels) dos campos do formulário, destacando-os com uma cor mais escura e texto em negrito. */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos inputs - Define o estilo das caixas de entrada do formulário, incluindo preenchimento, bordas arredondadas, e margens inferiores para espaçamento entre os campos. */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo do botão de submit - Estiliza o botão de envio do formulário com fundo azul e ajusta a cor de fundo ao passar o mouse sobre ele. */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Mudança na cor do botão ao passar o mouse */
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tornando o formulário responsivo - Torna o formulário responsivo, ajustando o padding dos elementos para telas menores*/
+@media (max-width: 400px) {
+    form {
+        padding: 15px;
+    }
+    
+    form button {
+        padding: 8px;
+    }
+}

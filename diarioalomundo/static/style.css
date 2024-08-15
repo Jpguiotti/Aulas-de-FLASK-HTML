@@ -1,0 +1,117 @@
+/* Resetando estilos básicos - Este bloco de código faz um reset dos estilos básicos aplicados aos elementos HTML, removendo margens e paddings padrão, além de definir a fonte Arial para todo o conteúdo.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centraliza o conteúdo da página e define a imagem diariobordo.jpg como plano de fundo. A imagem é fixada e redimensionada de acordo com o tamanho da tela */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(diariobordo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Fixa a imagem no fundo, mantendo a proporção ao redimensionar a tela */
+}
+
+
+
+
+/* Estilo do container principal - Define um container centralizado tanto vertical quanto horizontalmente para acomodar o conteúdo da página de login. */
+.login_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo da caixa de login - Estiliza a caixa de login com fundo branco, cantos arredondados, e uma sombra suave para destacá-la do fundo. */
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo dos títulos - Centraliza o título na caixa de login, define um espaçamento inferior e ajusta a cor do texto. */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo das caixas de input - Estiliza as caixas de input com preenchimento, bordas arredondadas e um tamanho de fonte padrão. */
+.input_box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input_box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão de submit - Define o estilo do botão de envio, incluindo uma cor de fundo azul e uma alteração de cor quando o usuário passa o mouse sobre ele.*/
+.submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Mudança de cor do botão ao passar o mouse */
+.submit:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do link "Cadastre-se" - Estiliza o link de suporte ("Cadastre-se") com cores e sublinhado ao passar o mouse. */
+.support {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.support a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.support a:hover {
+    text-decoration: underline;
+}
+
+/* Tornando a página responsiva - Torna a página responsiva ajustando o tamanho dos elementos para telas menores. */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .input_box input {
+        padding: 10px;
+    }
+
+    .submit {
+        padding: 10px;
+    }
+
+    .support a {
+        font-size: 12px;
+    }
+}
